@@ -1,0 +1,183 @@
+EJERCICIO DE JAVASCRIPT
+Reduce, Find, Filter, ForEach y Funciones
+
+==================================================
+EJERCICIO: SISTEMA DE EMPLEADOS
+==================================================
+
+Tenemos la siguiente información:
+
+const empleados = [
+    { nombre: "Carlos", edad: 25, salario: 2500000, area: "Desarrollo" },
+    { nombre: "Ana", edad: 30, salario: 3500000, area: "Diseño" },
+    { nombre: "Pedro", edad: 28, salario: 3000000, area: "Desarrollo" },
+    { nombre: "Laura", edad: 35, salario: 4500000, area: "Gerencia" },
+    { nombre: "Juan", edad: 22, salario: 2000000, area: "Soporte" }
+];
+
+
+OBJETIVO
+--------
+Crear diferentes funciones utilizando:
+
+- forEach
+- find
+- filter
+- reduce
+- Funciones
+
+
+==================================================
+1. MOSTRAR EMPLEADOS
+==================================================
+
+Crea una función llamada:
+
+mostrarEmpleados()
+
+Utiliza forEach para mostrar en consola cada empleado con el siguiente formato:
+
+Carlos - Desarrollo - $2500000
+Ana - Diseño - $3500000
+Pedro - Desarrollo - $3000000
+Laura - Gerencia - $4500000
+Juan - Soporte - $2000000
+
+
+==================================================
+2. BUSCAR EMPLEADO
+==================================================
+
+Crea una función llamada:
+
+buscarEmpleado(nombre)
+
+Utiliza find para buscar un empleado por su nombre.
+
+Ejemplo:
+
+buscarEmpleado("Pedro");
+
+Debe retornar el objeto correspondiente a Pedro.
+
+
+==================================================
+3. OBTENER DESARROLLADORES
+==================================================
+
+Crea una función llamada:
+
+obtenerDesarrolladores()
+
+Utiliza filter para obtener únicamente los empleados cuyo
+área sea "Desarrollo".
+
+El resultado debe contener a:
+
+- Carlos
+- Pedro
+
+
+==================================================
+4. CALCULAR NÓMINA
+==================================================
+
+Crea una función llamada:
+
+calcularNomina()
+
+Utiliza reduce para calcular cuánto dinero se paga en salarios
+entre todos los empleados.
+
+Resultado esperado:
+
+15000000
+
+
+==================================================
+5. CALCULAR PROMEDIO SALARIAL
+==================================================
+
+Crea una función llamada:
+
+calcularPromedioSalario()
+
+Utiliza reduce para calcular el salario promedio de todos
+los empleados.
+
+Resultado esperado:
+
+3000000
+
+
+==================================================
+6. RETO FINAL
+==================================================
+
+Crea una función llamada:
+
+mostrarResumen()
+
+Esta función debe mostrar un resumen de los empleados.
+
+Debe utilizar las funciones/métodos vistos:
+
+- forEach
+- find
+- filter
+- reduce
+
+
+El resultado esperado debe ser parecido a:
+
+===== RESUMEN =====
+
+Total empleados: 5
+
+Empleados de Desarrollo:
+Carlos
+Pedro
+
+Empleado con mayor salario:
+Laura - $4500000
+
+Nómina total:
+$15000000
+
+Salario promedio:
+$3000000
+
+
+==================================================
+RESTRICCIONES
+==================================================
+
+NO utilizar:
+
+- for
+- while
+- do while
+
+Utilizar únicamente funciones y los métodos:
+
+- forEach
+- find
+- filter
+- reduce
+
+
+==================================================
+PISTA
+==================================================
+
+Para obtener el empleado con mayor salario puedes utilizar
+reduce.
+
+Ejemplo conceptual:
+
+const mayor = empleados.reduce((empleadoMayor, empleadoActual) => {
+    // Comparar salarios
+});
+
+
+¡Intenta resolverlo antes de buscar una solución!
